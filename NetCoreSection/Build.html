@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Build</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="InfoText.css">
+   <link rel="stylesheet" href="../NavBar.css">
+   <link rel="icon" href="../Pictures/Logo.jpeg" />
+</head>
+
+<body>
+  <div class="MenuBar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       <div class="container-fluid">
+         <div class="nav-item"><img src="../Pictures/MicrosoftLogo.png" alt="Logo" class="imgage"></div>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="../index.html">.Net</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="../ExploreFeatures/Features.html">Explore Features</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="../WhyDotnet8/MainSite.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Why .Net 8.0
+               </a>
+               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../WhyDotnet8/MainSite.html#Security">Security</a></li>
+                <li><a class="dropdown-item" href="../WhyDotnet8/MainSite.html#Performance">Performance</a></li>
+                <li><a class="dropdown-item" href="../WhyDotnet8/MainSite.html#SupportDuration">Support Duration</a></li>
+                <li><a class="dropdown-item" href="../WhyDotnet8/MainSite.html#LangIndependence">Language Independence</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../WhyDotnet8/MainSite.html#ExtensiveClassLibrary:">Extensive Class Library</a></li>
+                <li><a class="dropdown-item" href="../WhyDotnet8/MainSite.html#PerformanceForDotnet">Performance Diffrenzes</a></li>
+               </ul>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="https://dotnet.microsoft.com/en-us/download">Download</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="../Docs/Docs.html">Docs</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+ </div>
+
+   <article>
+      <h1>Building Web Apps and Services for Multiple Platforms</h1>
+
+      <h2>Getting Started</h2>
+
+      <p>Develop web applications and services that run seamlessly on macOS, Windows, Linux, and Docker. Below are the
+         steps to create a cross-platform project:</p>
+
+      <pre>
+        <code class="code">
+# Create a new web app project
+dotnet new web -n MyWebApp
+
+# Change to the project directory
+cd MyWebApp
+        </code>
+      </pre>
+
+      <p>Open the project in your preferred IDE and start building!</p>
+
+      <h2>Building and Running the App</h2>
+
+      <p>Build and run the application using the following commands:</p>
+
+      <pre>
+        <code class="code">
+# Build the app
+dotnet build
+
+# Run the app
+dotnet run
+        </code>
+      </pre>
+
+      <p>Visit <a href="http://localhost:5000" target="_blank">http://localhost:5000</a> to see your web app in action.
+      </p>
+
+      <h2>Creating a Cross-Platform Service</h2>
+
+      <p>For building a cross-platform service, use the following commands:</p>
+
+      <pre>
+        <code class="code">
+# Create a new web API project
+dotnet new webapi -n MyWebService
+
+# Change to the project directory
+cd MyWebService
+        </code>
+      </pre>
+
+      <p>Open the project in your IDE, build, and run the service using similar commands as above.</p>
+
+      <h2>Containerizing with Docker</h2>
+
+      <p>Create a Dockerfile in the project directory:</p>
+
+      <pre>
+        <code class="code">
+# Dockerfile
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR /app
+COPY bin/Debug/net5.0/publish/ .
+ENTRYPOINT ["dotnet", "MyWebApp.dll"]
+        </code>
+      </pre>
+
+      <p>Adjust the COPY command based on your project structure. Build and run the Docker container:</p>
+
+      <pre>
+        <code class="code">
+# Build the Docker image
+docker build -t mywebapp .
+
+# Run the Docker container
+docker run -p 8080:80 mywebapp
+        </code>
+      </pre>
+
+      <p>Access your web app in a browser at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>.
+      </p>
+
+      <h2>Conclusion</h2>
+
+      <p>You've successfully set up a project to build web apps and services that can run on macOS, Windows, Linux, and
+         Docker. Feel free to extend and deploy your application on various platforms. Happy coding!</p>
+   </article>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
