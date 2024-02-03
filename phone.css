@@ -2,4 +2,38 @@
    div.GeneralBoxDesign{
     flex-direction: column;
    }
+   div.Header p{
+      margin: 0 auto;
+      margin-left: 0;
+   }
+   div h1{
+      margin: 0 auto;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      padding: 0rem;
+   }
+   div.MobileDesign{
+      display: flex;
+      flex-direction: column;
+   }
+   div.Inforbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   div.Inforbar p{
+      margin: 0 auto;
+      margin-left: 0;
+      margin-right: 12rem !important;                                            
+   }
+   div.AlignBoxes{
+     display: flex;
+     flex-direction: column !important;
+       align-items: center;
+   }
+   h1{
+      margin-left: 3rem;
+   }
+
 }
