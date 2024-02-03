@@ -1,0 +1,93 @@
+/* Common styles for cards */
+.card {
+   width: 290px;
+   height: 154px;
+   border-radius: 20px;
+   background: #f5f5f5;
+   position: relative;
+   padding: 1.8rem;
+   border: 2px solid #c3c6ce;
+   transition: 0.5s ease-out;
+   overflow: visible;
+}
+
+.card-details {
+   color: black;
+   height: 100%;
+   display: grid;
+   place-content: center;
+}
+
+.text-body {
+   color: black;
+   font-size: 16px;
+   font-family: cursive;
+}
+
+.text-title {
+   font-size: 1.5em;
+   font-weight: bold;
+   padding-top: 0.3rem;
+}
+
+/* Header styles */
+.Header {
+   color: #831ec7;
+   font-size: 2.8rem;
+   font-weight: bolder;
+   text-align: center;
+   transition: 2s;
+}
+
+.Header:hover {
+   transform: scale(1.4);
+}
+
+/* Table styles */
+
+
+/* First Block styles */
+.FirstBlock {
+   border: blue solid 3px;
+   border-radius: 2%;
+   margin: 0 80rem 0 20rem;
+   padding: 10px;
+}
+
+/* Card hover effect */
+.card:hover {
+   border-color: #008bf8;
+   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   transform: scale(1.2);
+}
+
+/* Responsive design */
+.AlignBoxes {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 2rem;
+}
+
+/* General link styles */
+a {
+   text-decoration: none;
+   color: black;
+}
+
+/* Specific card styles for different sections */
+#Build .text-title {
+   color: #008bf8;
+}
+
+#MobileDesktop .text-title {
+   color: #d600aa;
+}
+
+#Cloud .text-title {
+   color: #08ccab;
+}
+
+#Microservices .text-title {
+   color: #0011ff;
+}
